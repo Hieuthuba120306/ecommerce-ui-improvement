@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bản demo cải tiến khu vực banner và danh mục nổi bật cho website bán hàng thực phẩm.">
+  <title>Bách Hóa Xanh | Demo cải tiến trang chủ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="notice">BẢN DEMO HỌC TẬP — Không phải website chính thức của Bách Hóa Xanh</div>
+  <header class="site-header">
+    <div class="container header-top">
+      <a class="brand" href="#top" aria-label="Về đầu trang">BÁCH HÓA <span>XANH</span><small>Giao diện cải tiến</small></a>
+      <form class="search" action="#products" role="search">
+        <label class="sr-only" for="search-input">Tìm sản phẩm</label>
+        <input id="search-input" type="search" placeholder="Bạn đang tìm thực phẩm gì?" aria-label="Tìm sản phẩm">
+        <button type="submit">Tìm kiếm</button>
+      </form>
+      <a class="header-cart" href="#products" aria-label="Xem sản phẩm">🛒 <span>Mua sắm</span></a>
+    </div>
+    <nav class="container main-nav" aria-label="Điều hướng chính">
+      <a href="#categories">Danh mục</a><a href="#meal">Hôm nay ăn gì?</a><a href="#products">Sản phẩm nổi bật</a><a href="#support">Hỗ trợ & chính sách</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="container hero" aria-label="Giới thiệu và gợi ý mua sắm">
+      <div class="hero-primary">
+        <div class="hero-copy">
+          <span class="eyebrow">ĐI CHỢ NHANH • BỮA CƠM NGON</span>
+          <h1>Tươi ngon mỗi ngày,<br><em>chọn nhanh trong một chạm</em></h1>
+          <p>Khám phá thực phẩm thiết yếu và mua sắm dễ dàng theo nhu cầu của gia đình bạn.</p>
+          <a class="button button-primary" href="#categories">Khám phá danh mục <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-visual" aria-hidden="true"><span class="hero-emoji">🥬</span><span class="hero-emoji">🥕</span><span class="hero-emoji">🍅</span><span class="hero-emoji">🥑</span></div>
+      </div>
+      <article class="meal-card" id="meal">
+        <span class="eyebrow">GỢI Ý BỮA ĂN</span>
+        <div class="meal-visual" aria-hidden="true">🍲</div>
+        <h2>Hôm nay ăn gì?</h2>
+        <p>Chọn món ngon, chuẩn bị nguyên liệu dễ dàng hơn.</p>
+        <a href="#products" class="text-link">Xem nguyên liệu gợi ý →</a>
+      </article>
+    </section>
+
+    <section class="container categories section-space" id="categories" aria-labelledby="category-title">
+      <div class="section-heading"><div><span class="eyebrow">TÌM NHANH, MUA GỌN</span><h2 id="category-title">Danh mục nổi bật</h2></div><a href="#products" class="text-link">Xem sản phẩm →</a></div>
+      <div class="category-grid">
+        <a class="category-card" href="#products"><span aria-hidden="true">🥦</span><strong>Rau củ quả</strong><small>Tươi mỗi ngày</small></a>
+        <a class="category-card" href="#products"><span aria-hidden="true">🥩</span><strong>Thịt & cá</strong><small>Cho bữa cơm ngon</small></a>
+        <a class="category-card" href="#products"><span aria-hidden="true">🥛</span><strong>Sữa & đồ uống</strong><small>Dinh dưỡng tiện lợi</small></a>
+        <a class="category-card" href="#products"><span aria-hidden="true">🧂</span><strong>Gia vị</strong><small>Đậm đà hương vị</small></a>
+        <a class="category-card" href="#products"><span aria-hidden="true">🧴</span><strong>Chăm sóc nhà</strong><small>Gọn gàng sạch sẽ</small></a>
+        <a class="category-card" href="#products"><span aria-hidden="true">🍞</span><strong>Thực phẩm khô</strong><small>Dự trữ dễ dàng</small></a>
+      </div>
+    </section>
+
+    <section class="container products section-space" id="products" aria-labelledby="product-title">
+      <div class="section-heading"><div><span class="eyebrow">GỢI Ý CHO BẠN</span><h2 id="product-title">Sản phẩm nổi bật</h2></div><p class="section-note">Giá minh họa cho mục đích học tập</p></div>
+      <div class="product-grid">
+        <article class="product-card"><div class="product-image"><img src="images/rau-cu.svg" alt="Minh họa giỏ rau củ tươi" width="240" height="180"><span class="product-tag">Tươi ngon</span></div><div class="product-info"><span class="product-type">Rau củ quả</span><h3>Combo rau củ gia đình</h3><p class="product-unit">1 phần</p><p class="price">39.000đ</p><button type="button" class="buy-button" title="Nút minh họa, chưa kết nối giỏ hàng">+ Thêm vào giỏ</button></div></article>
+        <article class="product-card"><div class="product-image"><img src="images/sua.svg" alt="Minh họa hộp sữa tươi" width="240" height="180"><span class="product-tag">Phổ biến</span></div><div class="product-info"><span class="product-type">Sữa & đồ uống</span><h3>Sữa tươi nguyên chất</h3><p class="product-unit">Hộp 1 lít</p><p class="price">32.000đ</p><button type="button" class="buy-button" title="Nút minh họa, chưa kết nối giỏ hàng">+ Thêm vào giỏ</button></div></article>
+        <article class="product-card"><div class="product-image"><img src="images/trung.svg" alt="Minh họa khay trứng gà" width="240" height="180"><span class="product-tag">Thiết yếu</span></div><div class="product-info"><span class="product-type">Thực phẩm tươi</span><h3>Trứng gà tươi</h3><p class="product-unit">Vỉ 10 quả</p><p class="price">29.000đ</p><button type="button" class="buy-button" title="Nút minh họa, chưa kết nối giỏ hàng">+ Thêm vào giỏ</button></div></article>
+        <article class="product-card"><div class="product-image"><img src="images/tao.svg" alt="Minh họa táo đỏ" width="240" height="180"><span class="product-tag">Trái cây</span></div><div class="product-info"><span class="product-type">Trái cây</span><h3>Táo đỏ giòn ngọt</h3><p class="product-unit">Túi 1 kg</p><p class="price">59.000đ</p><button type="button" class="buy-button" title="Nút minh họa, chưa kết nối giỏ hàng">+ Thêm vào giỏ</button></div></article>
+      </div>
+      <p class="demo-note">Lưu ý: Đây là giao diện tĩnh HTML/CSS. Nút “Thêm vào giỏ” chỉ để minh họa, chưa có chức năng xử lý đơn hàng.</p>
+    </section>
+  </main>
+  <footer id="support" class="footer"><div class="container footer-inner"><div><strong>Bách Hóa Xanh — Bản demo cải tiến</strong><p>Bài tập cá nhân: cải tiến banner và danh mục nổi bật.</p></div><div class="footer-links"><a href="#support">Hỗ trợ khách hàng</a><a href="#support">Hóa đơn điện tử</a><a href="#support">Chính sách mua hàng</a></div></div></footer>
+</body>
+</html>
