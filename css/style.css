@@ -3,3 +3,60 @@
 @media(max-width:950px){.hero{grid-template-columns:1fr}.meal-card{display:grid;grid-template-columns:1fr auto;column-gap:15px;min-height:0}.meal-card .eyebrow,.meal-card h2,.meal-card p,.meal-card a{grid-column:1}.meal-visual{grid-column:2;grid-row:1/5;font-size:80px}.category-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.header-top{gap:14px}.brand{font-size:19px}.main-nav{gap:18px;flex-wrap:wrap}}
 @media(max-width:600px){.container{width:min(100% - 28px,1160px)}.header-top{display:grid;grid-template-columns:1fr auto;gap:12px;padding:14px 0}.brand{font-size:19px}.search{grid-column:1/-1;grid-row:2;max-width:none}.search input{padding:12px}.search button{padding:0 14px}.header-cart span{display:none}.main-nav{overflow-x:auto;flex-wrap:nowrap;gap:22px;padding-bottom:12px;white-space:nowrap;font-size:12px}.hero{margin-top:16px;gap:12px}.hero-primary{padding:28px 23px;min-height:345px}.hero-copy{max-width:100%}.hero-copy p{max-width:265px;font-size:14px}.hero-visual{right:8px;bottom:8px;width:155px;height:135px}.hero-emoji{font-size:47px}.meal-card{padding:18px}.meal-card h2{font-size:21px}.meal-visual{font-size:62px}.section-space{margin-top:38px}.section-heading h2{font-size:24px}.section-heading .text-link{font-size:12px}.category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.category-card{padding:15px 6px}.category-card span{font-size:39px}.product-grid{gap:10px}.product-image{padding:9px}.product-image img{height:120px}.product-info{padding:11px}.product-info h3{font-size:14px}.price{font-size:17px}.buy-button{font-size:12px;padding:11px 5px}.section-note{max-width:110px;text-align:right}.footer-inner{flex-direction:column;gap:10px}.footer-links{gap:10px 16px}}
 @media(max-width:360px){.hero-visual{opacity:.6}.hero-copy p{max-width:235px}.product-info h3{font-size:13px}}
+
+/* ===== PERSONAL IMPROVEMENT: NAVIGATION MENU ===== */
+
+/* Chia đều 4 mục menu */
+.main-nav {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+  padding: 12px 0;
+}
+
+/* Thiết kế từng mục menu */
+.main-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 14px 10px;
+  border-radius: 12px;
+
+  color: #193027;
+  text-decoration: none;
+
+  transition: background-color 0.2s ease,
+              color 0.2s ease;
+}
+
+/* Hiệu ứng khi rê chuột */
+.main-nav a:hover {
+  background-color: #eaf7ed;
+  color: #08783d;
+  text-decoration: none;
+}
+
+/* Hiệu ứng khi dùng bàn phím */
+.main-nav a:focus-visible {
+  background-color: #eaf7ed;
+  outline: 2px solid #08783d;
+  outline-offset: 2px;
+}
+
+/* Điều chỉnh trên điện thoại */
+@media (max-width: 600px) {
+  .main-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    overflow-x: visible;
+    white-space: normal;
+  }
+
+  .main-nav a {
+    font-size: 12px;
+    padding: 12px 6px;
+  }
+}
